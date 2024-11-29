@@ -1,0 +1,9 @@
+version: 0.1.1
+default:
+  POSTGRES_CONNECT_TIMEOUT: 10
+  POSTGRES_DBNAME: "{{ env_var('DB_NAME') }}"
+  POSTGRES_SCHEMA: "{{ env_var('DB_SCHEMA_NAME') }}"
+  POSTGRES_USER: "{{ env_var('DB_USERNAME') }}"
+  POSTGRES_PASSWORD: "{{ env_var('DB_PASSWORD') }}"
+  POSTGRES_HOST: "{{ env_var('DB_HOST') }}"
+  POSTGRES_PORT: "{{ env_var('DB_PORT') }}"
